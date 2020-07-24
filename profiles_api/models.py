@@ -17,7 +17,7 @@ class UserProfileManager(BaseUserManager):
         user.set_password(password)
         user.save(using=self._db)
 
-        return User
+        return user
 
     def create_superuser(email, first_name, last_name, password):
         """ Create super user with create_user function """
