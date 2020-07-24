@@ -1,0 +1,32 @@
+1.For runninnng vagrant
+vagrant up
+
+2.For running ssh on vagrant
+vagrant ssh
+
+3.For creating a new virtual env
+cd /vagrant/
+python -m venc ~/env
+
+4.For activatinng virtual environment
+
+source ~/env/bin/activate
+
+5.For deactivating virtual environment
+deactivate
+
+
+6.For downloading packages
+ best practice is to create a requirments.txt
+ add the packages here that you need
+
+ cd /vagrant/
+ activate env and then type the following
+
+ pip install -r requirements.txt
+
+7.Start a Django Project
+ django-admin.py startproject profiles .
+8. Create Django App with the project
+
+python manage.py startapp profiles_api
